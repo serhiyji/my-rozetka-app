@@ -13,6 +13,12 @@ const MainMenu = () => {
             <Menu.Item key="create">
                 <Link to="/categories/create">Create category</Link>
             </Menu.Item>
+            <Menu.Item key="register">
+                <Link to="/auth/register">Register</Link>
+            </Menu.Item>
+            <Menu.Item key="lxxogin">
+                <Link to="/auth/login">Login</Link>
+            </Menu.Item>
         </Menu>
     );
 };

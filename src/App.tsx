@@ -5,6 +5,8 @@ import NoMatchPage from "./components/404/NoMatchPage.tsx";
 import CategoryCreatePage from "./components/categories/create/CategoryCreatePage.tsx";
 import CategoryAllPage from "./components/categories/all/CategoryAllPage.tsx";
 import MainMenu from "./components/menu/MainMenu.tsx";
+import LoginPage from "./components/auth/login/LoginPage.tsx";
+import RegisterPage from "./components/auth/register/RegisterPage.tsx";
 
 const App = () => {
     return (
@@ -15,6 +17,10 @@ const App = () => {
                     <Route index element={<HomePage/>} />
                     <Route path={"/categories/create"} element={<CategoryCreatePage/>} />
                     <Route path={"/categories/all"} element={<CategoryAllPage/>} />
+
+                    <Route path={"/auth/login"} element={<LoginPage/>} />
+                    <Route path={"/auth/register"} element={<RegisterPage/>} />
+
                     <Route path="*" element={<NoMatchPage />} />
                 </Route>
             </Routes>
